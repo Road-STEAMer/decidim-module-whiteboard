@@ -8,14 +8,14 @@ eu:
         published_at: Argitaratze-data
         title: Izenburua
     models:
-      decidim/nbs/create_post_event: Blogeko beste argitalpen bat
+      decidim/whiteboard/create_post_event: Blogeko beste argitalpen bat
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         one: Argitalpena
         other: Argitalpenak
   decidim:
-    nbs:
+    whiteboard:
       actions:
         author_id: Sortu argitalpena hau bezala
         confirm_destroy: Ziur zaude post hau argitalpen ezabatu nahi duzula?
@@ -69,7 +69,7 @@ eu:
             other: "%{count} edukin"
           empty: Oraindik ez dago argitalpenik.
     components:
-      nbs:
+      whiteboard:
         actions:
           comment: Iruzkindu
           create: Sortu
@@ -88,7 +88,7 @@ eu:
             endorsements_blocked: Atxikimenduak blokeatuta
             endorsements_enabled: Atxikimenduak gaituta
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: '"%{resource_title}" argitalpena jarraitzen ari zaren "%{participatory_space_title}" espazioan argitaratu da.'
           email_outro: Jakinarazpena jaso duzu "%{participatory_space_title}" jarraitzen ari zarelako. Aurreko estekan utzi ahal diozu jarraitzeari.

@@ -1,7 +1,7 @@
 ---
 is:
   decidim:
-    nbs:
+    whiteboard:
       actions:
         confirm_destroy: Ertu viss um að þú viljir eyða þessu færslu?
         destroy: Eyða
@@ -22,7 +22,7 @@ is:
             author: Höfundur
             body: Líkami
     components:
-      nbs:
+      whiteboard:
         name: Blogg
         settings:
           global:
@@ -30,7 +30,7 @@ is:
           step:
             announcement: Tilkynning
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: Staða "%{resource_title}" hefur verið birt í "%{participatory_space_title}" sem þú fylgist með.
           email_outro: Þú hefur fengið þessa tilkynningu vegna þess að þú fylgist með "%{participatory_space_title}". Þú getur sleppt því frá fyrri tengilinn.

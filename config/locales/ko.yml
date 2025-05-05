@@ -6,7 +6,7 @@ ko:
         decidim_author_id: 작성자
         title: 제목
   decidim:
-    nbs:
+    whiteboard:
       actions:
         destroy: 삭제
         edit: 수정
@@ -33,7 +33,7 @@ ko:
             official_blog_post: 공식 게시물
             title: 제목
     components:
-      nbs:
+      whiteboard:
         actions:
           update: 업데이트
         name: 블로그

@@ -1,6 +1,6 @@
 ---
 sl:
   decidim:
-    nbs:
+    whiteboard:
       actions:
         destroy: Izbriši

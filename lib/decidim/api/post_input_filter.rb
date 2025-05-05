@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Decidim
-  module Nbs
+  module Whiteboard
     class PostInputFilter < Decidim::Core::BaseInputFilter
       include Decidim::Core::HasTimestampInputFilter
 
@@ -14,7 +14,7 @@ A typical query would look like:
   {
     participatoryProcesses {
       components {
-        ...on nbs {
+        ...on whiteboard {
           posts(filter:{ createdBefore: \"2020-01-01\" }) {
             id
           }

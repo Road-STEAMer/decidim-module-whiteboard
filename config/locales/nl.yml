@@ -2,14 +2,14 @@
 nl:
   activemodel:
     models:
-      decidim/nbs/create_post_event: Nieuwe blogpost
+      decidim/whiteboard/create_post_event: Nieuwe blogpost
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         one: Post
-        other: Stories
+        other: Boards
   decidim:
-    nbs:
+    whiteboard:
       actions:
         author_id: Bericht aanmaken als
         confirm_destroy: Weet je zeker dat je dit bericht wilt verwijderen?
@@ -41,7 +41,7 @@ nl:
             body: Tekstgedeelte
             official_blog_post: Officiële blogpost
     components:
-      nbs:
+      whiteboard:
         actions:
           create: Creëren
           destroy: Verwijderen
@@ -58,7 +58,7 @@ nl:
             endorsements_blocked: Aanbevelingen geblokkeerd
             endorsements_enabled: Aanbevelingen ingeschakeld
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: Het bericht "%{resource_title}" is gepubliceerd in "%{participatory_space_title}" dat je volgt.
           email_outro: Je hebt deze melding ontvangen omdat je "%{participatory_space_title}" volgt. Ontvolgen kan door te klikken op de voorgaande link.

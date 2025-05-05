@@ -8,14 +8,14 @@ tr:
         published_at: Yayın zamanı
         title: Başlik / Unvani 
     models:
-      decidim/nbs/create_post_event: Yeni blog yazısı
+      decidim/whiteboard/create_post_event: Yeni blog yazısı
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         one: posta
         other: Mesajlar
   decidim:
-    nbs:
+    whiteboard:
       actions:
         confirm_destroy: Bu yayını silmek istediğinize emin misiniz?
         destroy: silmek
@@ -40,7 +40,7 @@ tr:
             author: Yazar
             body: Vücut
     components:
-      nbs:
+      whiteboard:
         name: Blog
         settings:
           global:
@@ -53,7 +53,7 @@ tr:
             endorsements_blocked: Yorumlar engellendi
             endorsements_enabled: Yorumlar etkin
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: '"%{resource_title}" yazısı, takip ettiğiniz "%{participatory_space_title}" harfinde yayınlandı.'
           email_outro: Bu bildirimi aldınız çünkü "%{participatory_space_title}" u takip ediyorsun. Bunu önceki linkten takip edebilirsiniz.

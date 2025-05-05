@@ -8,14 +8,14 @@ fi-pl:
         published_at: Julkaisuaika
         title: Otsikko
     models:
-      decidim/nbs/create_post_event: Uusi blogiartikkeli
+      decidim/whiteboard/create_post_event: Uusi blogiartikkeli
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         one: Artikkeli
         other: Artikkelia
   decidim:
-    nbs:
+    whiteboard:
       actions:
         author_id: Luo artikkeli käyttäjänä
         confirm_destroy: Haluatko varmasti poistaa tämän artikkelin?
@@ -69,7 +69,7 @@ fi-pl:
             other: "%{count} artikkelia"
           empty: Ei yhtään artikkelia.
     components:
-      nbs:
+      whiteboard:
         actions:
           comment: Kommentointi
           create: Luo
@@ -88,7 +88,7 @@ fi-pl:
             endorsements_blocked: Suositukset estetty
             endorsements_enabled: Suositukset käytössä
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: Seuraamassasi kohteessa "%{participatory_space_title}" on julkaistu artikkeli "%{resource_title}".
           email_outro: Tämä ilmoitus on lähetetty sinulle, koska seuraat kohdetta "%{participatory_space_title}". Voit lopettaa seuraamisen edellä esitetyn linkin kautta.

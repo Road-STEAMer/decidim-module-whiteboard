@@ -1,19 +1,19 @@
 # frozen_string_literal: true
 
 module Decidim
-  module Nbs
-    class NbsType < Decidim::Api::Types::BaseObject
+  module Whiteboard
+    class WhiteboardType < Decidim::Api::Types::BaseObject
       implements Decidim::Core::ComponentInterface
 
-      graphql_name "nbs"
-      description "A nbs component of a participatory space."
+      graphql_name "whiteboard"
+      description "A whiteboard component of a participatory space."
 
-      field :posts, type: Decidim::Nbs::PostType.connection_type, description: "List all posts", connection: true, null: false do
-        argument :order, Decidim::Nbs::PostInputSort, "Provides several methods to order the results", required: false
-        argument :filter, Decidim::Nbs::PostInputFilter, "Provides several methods to filter the results", required: false
+      field :posts, type: Decidim::Whiteboard::PostType.connection_type, description: "List all posts", connection: true, null: false do
+        argument :order, Decidim::Whiteboard::PostInputSort, "Provides several methods to order the results", required: false
+        argument :filter, Decidim::Whiteboard::PostInputFilter, "Provides several methods to filter the results", required: false
       end
 
-      field :post, type: Decidim::Nbs::PostType, description: "Finds one post", null: true do
+      field :post, type: Decidim::Whiteboard::PostType, description: "Finds one post", null: true do
         argument :id, GraphQL::Types::ID, "The ID of the post", required: true
       end
 

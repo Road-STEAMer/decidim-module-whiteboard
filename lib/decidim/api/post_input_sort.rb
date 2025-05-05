@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Decidim
-  module Nbs
+  module Whiteboard
     class PostInputSort < Decidim::Core::BaseInputSort
       include Decidim::Core::HasTimestampInputSort
       include Decidim::Core::HasEndorsableInputSort

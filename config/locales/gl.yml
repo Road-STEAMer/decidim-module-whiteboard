@@ -2,14 +2,14 @@
 gl:
   activemodel:
     models:
-      decidim/nbs/create_post_event: Nova publicación no blog
+      decidim/whiteboard/create_post_event: Nova publicación no blog
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         one: Publicación
         other: Publicacións
   decidim:
-    nbs:
+    whiteboard:
       actions:
         author_id: Crear publicación como
         confirm_destroy: Tes a certeza de querer eliminar esta publicación?
@@ -35,7 +35,7 @@ gl:
             author: Autor
             body: Corpo
     components:
-      nbs:
+      whiteboard:
         actions:
           create: Crear
           destroy: Eliminar
@@ -52,7 +52,7 @@ gl:
             endorsements_blocked: Adhesións bloqueadas
             endorsements_enabled: Adhesións habilitadas
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: A publicación "%{resource_title}" publicouse en "%{participatory_space_title}" que estás seguindo.
           email_outro: Recibiches esta notificación porque estás seguindo "%{participatory_space_title}". Podes deixar de seguir dende a ligazón anterior.

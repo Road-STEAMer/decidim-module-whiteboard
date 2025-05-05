@@ -1,14 +1,14 @@
 fi-pl:
   activemodel:
     models:
-      decidim/nbs/create_post_event: Uusi blogiartikkeli
+      decidim/whiteboard/create_post_event: Uusi blogiartikkeli
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         one: Artikkeli
         other: Artikkelia
   decidim:
-    nbs:
+    whiteboard:
       actions:
         confirm_destroy: Haluatko varmasti poistaa tämän artikkelin?
         destroy: Poista
@@ -54,7 +54,7 @@ fi-pl:
           most_commented_posts: Eniten kommentoidut artikkelit
       read_more: Lue lisää
     components:
-      nbs:
+      whiteboard:
         name: Blogi
         settings:
           global:
@@ -64,7 +64,7 @@ fi-pl:
             announcement: Ilmoitus
             comments_blocked: Kommentointi estetty
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: Seuraamassasi kohteessa "%{participatory_space_title}" on julkaistu artikkeli "%{resource_title}".
           email_outro: Tämä ilmoitus on lähetetty sinulle, koska seuraat kohdetta "%{participatory_space_title}". Voit lopettaa seuraamisen edellä esitetyn linkin kautta.

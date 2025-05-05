@@ -8,14 +8,14 @@ sv:
         published_at: Publicerad
         title: Titel
     models:
-      decidim/nbs/create_post_event: Nytt blogginlägg
+      decidim/whiteboard/create_post_event: Nytt blogginlägg
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         one: Inlägg
         other: Inlägg
   decidim:
-    nbs:
+    whiteboard:
       actions:
         author_id: Skapa inlägg som
         confirm_destroy: Vill du radera inlägget?
@@ -69,7 +69,7 @@ sv:
             other: "%{count} inlägg"
           empty: Det finns inga inlägg ännu.
     components:
-      nbs:
+      whiteboard:
         actions:
           comment: Kommentera
           create: Skapa
@@ -88,7 +88,7 @@ sv:
             endorsements_blocked: Blockera gilla-markeringar
             endorsements_enabled: Aktivera gilla-markeringar
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: Inlägget "%{resource_title}" har publicerats i "%{participatory_space_title}" som du följer.
           email_outro: Du har fått det här meddelandet eftersom du följer "%{participatory_space_title}". Du kan sluta att följa det från den föregående länken.

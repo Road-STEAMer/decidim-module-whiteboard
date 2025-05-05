@@ -8,14 +8,14 @@ sq:
         published_at: Koha e publikimit
         title: Titulli
     models:
-      decidim/nbs/create_post_event: Postim i ri
+      decidim/whiteboard/create_post_event: Postim i ri
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         one: Postim
         other: Postimet
   decidim:
-    nbs:
+    whiteboard:
       actions:
         author_id: Krijo postimin si
         confirm_destroy: Je i sigurt që dëshiron ta fshish këtë postim?
@@ -69,7 +69,7 @@ sq:
             other: "%{count} postime"
           empty: Nuk ka ende postime.
     components:
-      nbs:
+      whiteboard:
         actions:
           comment: Koment
           create: Krijo
@@ -88,7 +88,7 @@ sq:
             endorsements_blocked: Mbështetjet të bllokuara
             endorsements_enabled: Mbështetjet të aktivizuara
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: Postimi "%{resource_title}" është publikuar në "%{participatory_space_title}" që ju po ndiqni.
           email_outro: Ju e keni marrë këtë njoftim sepse po ndiqni %{participatory_space_title}. Mund t'i ndaloni njoftimet me anë të linkut të mëparshëm.

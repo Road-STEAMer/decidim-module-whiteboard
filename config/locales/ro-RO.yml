@@ -8,15 +8,15 @@ ro:
         published_at: Publicat la
         title: Titlu
     models:
-      decidim/nbs/create_post_event: Postare nouă pe blog
+      decidim/whiteboard/create_post_event: Postare nouă pe blog
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         one: Postare
         few: Postări
         other: Postări
   decidim:
-    nbs:
+    whiteboard:
       actions:
         author_id: Creează postare ca
         confirm_destroy: Sigur dorești să ştergi această postare?
@@ -59,7 +59,7 @@ ro:
             published_at: Publicat la
             title: Titlu
     components:
-      nbs:
+      whiteboard:
         actions:
           comment: Comentariu
           create: Creează
@@ -78,7 +78,7 @@ ro:
             endorsements_blocked: Susțineri blocate
             endorsements_enabled: Susțineri activate
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: Postarea "%{resource_title}" a fost publicată în "%{participatory_space_title}" pe care o urmărești.
           email_outro: Ai primit această notificare deoarece urmărești „%{participatory_space_title}”. Poți anula abonarea de la link-ul anterior.

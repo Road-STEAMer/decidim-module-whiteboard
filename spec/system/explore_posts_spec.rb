@@ -4,7 +4,7 @@ require "spec_helper"
 
 describe "Explore posts" do
   include_context "with a component"
-  let(:manifest_name) { "nbs" }
+  let(:manifest_name) { "whiteboard" }
 
   context "when there are no posts" do
     describe "index" do
@@ -44,7 +44,7 @@ describe "Explore posts" do
       end
 
       it "shows all posts for the given process" do
-        expect(page).to have_css("#nbs > a", count: 2)
+        expect(page).to have_css("#whiteboard > a", count: 2)
       end
 
       context "when paginating" do
@@ -56,7 +56,7 @@ describe "Explore posts" do
         end
 
         it "lists 25 resources per page by default" do
-          expect(page).to have_css("#nbs > a", count: 25)
+          expect(page).to have_css("#whiteboard > a", count: 25)
           expect(page).to have_css("[data-pages] [data-page]", count: 2)
         end
       end
@@ -64,9 +64,9 @@ describe "Explore posts" do
       context "with some unpublished posts" do
         let!(:unpublished) { create(:post, component:, published_at: 2.days.from_now) }
 
-        it "shows only published nbs" do
-          expect(Decidim::Nbs::Post.count).to eq(3)
-          expect(page).to have_css("#nbs > a", count: 2)
+        it "shows only published whiteboard" do
+          expect(Decidim::Whiteboard::Post.count).to eq(3)
+          expect(page).to have_css("#whiteboard > a", count: 2)
         end
       end
     end

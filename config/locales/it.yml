@@ -2,14 +2,14 @@
 it:
   activemodel:
     models:
-      decidim/nbs/create_post_event: Nuovo post sul blog
+      decidim/whiteboard/create_post_event: Nuovo post sul blog
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         one: Inviare
         other: Messaggi
   decidim:
-    nbs:
+    whiteboard:
       actions:
         author_id: Crea post come
         confirm_destroy: Sei sicuro di voler eliminare questo post?
@@ -35,7 +35,7 @@ it:
             author: Autore
             body: Corpo
     components:
-      nbs:
+      whiteboard:
         actions:
           comment: Commento
           endorse: Appoggia
@@ -51,7 +51,7 @@ it:
             endorsements_blocked: Appoggi bloccati
             endorsements_enabled: Appoggi abilitati
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: Il post "%{resource_title}" è stato pubblicato in "%{participatory_space_title}" che stai seguendo.
           email_outro: Hai ricevuto questa notifica perché stai seguendo "%{participatory_space_title}". Puoi smettere di seguirlo dal link precedente.

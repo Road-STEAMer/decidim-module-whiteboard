@@ -8,16 +8,16 @@ lt:
         published_at: Paskelbimo laikas
         title: Pavadinimas
     models:
-      decidim/nbs/create_post_event: Naujas tinklaraščio įrašas
+      decidim/whiteboard/create_post_event: Naujas tinklaraščio įrašas
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         one: Publikacija
         few: Publikacijos
         many: Publikacijos
         other: Publikacijos
   decidim:
-    nbs:
+    whiteboard:
       actions:
         author_id: Sukurti įrašą kaip
         confirm_destroy: Ar tikrai norite ištrinti šį įrašą?
@@ -65,7 +65,7 @@ lt:
             published_at: Paskelbimo laikas
             title: Pavadinimas
     components:
-      nbs:
+      whiteboard:
         actions:
           comment: Komentuoti
           create: Sukurti
@@ -84,7 +84,7 @@ lt:
             endorsements_blocked: Pritarimai užblokuoti
             endorsements_enabled: Pritarimai aktyvuoti
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: Publikacija%{resource_title} buvo publikuota %{participatory_space_title} kurią sekate.
           email_outro: Gavote šį pranešimą nes sekate %{participatory_space_title}. Galite nebesekti dėka praėjusios nuorodos.

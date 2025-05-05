@@ -6,10 +6,10 @@ require "decidim/core/test"
 require "decidim/core/test/shared_examples/input_filter_examples"
 
 module Decidim
-  module Nbs
+  module Whiteboard
     describe PostInputFilter, type: :graphql do
       include_context "with a graphql class type"
-      let(:type_class) { Decidim::Nbs::NbsType }
+      let(:type_class) { Decidim::Whiteboard::WhiteboardType }
 
       let(:model) { create(:post_component) }
       let!(:models) { create_list(:post, 3, component: model) }

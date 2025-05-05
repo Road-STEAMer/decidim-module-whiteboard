@@ -8,14 +8,14 @@ bg:
         published_at: Час на публикуване
         title: Заглавие
     models:
-      decidim/nbs/create_post_event: Нова блог публикация
+      decidim/whiteboard/create_post_event: Нова блог публикация
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         one: Публикация
         other: Публикации
   decidim:
-    nbs:
+    whiteboard:
       actions:
         author_id: Създаване на публикация като
         confirm_destroy: Сигурни ли сте, че желаете да изтриете тази публикация?
@@ -69,7 +69,7 @@ bg:
             other: "%{count} публикации"
           empty: Все още няма постове.
     components:
-      nbs:
+      whiteboard:
         actions:
           comment: Коментар
           create: Създаване
@@ -88,7 +88,7 @@ bg:
             endorsements_blocked: Подкрепата е блокирана
             endorsements_enabled: Подкрепата е активирана
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: Публикацията „%{resource_title}“ е публикувана в(ъв)%{participatory_space_title}“, което следвате.
           email_outro: Получавате това известие, защото следвате "%{participatory_space_title}". Може да премахнете следването чрез предходния линк.

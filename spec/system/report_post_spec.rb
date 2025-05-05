@@ -5,7 +5,7 @@ require "spec_helper"
 describe "Report a post" do
   include_context "with a component"
 
-  let(:manifest_name) { "nbs" }
+  let(:manifest_name) { "whiteboard" }
   let(:reportable) { create(:post, component:) }
   let(:reportable_path) { resource_locator(reportable).path }
   let!(:user) { create(:user, :confirmed, organization:) }

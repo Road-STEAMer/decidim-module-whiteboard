@@ -1,14 +1,14 @@
 fr-LU:
   activemodel:
     models:
-      decidim/nbs/create_post_event: Nouvel article
+      decidim/whiteboard/create_post_event: Nouvel article
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         one: Article
         other: Articles
   decidim:
-    nbs:
+    whiteboard:
       actions:
         confirm_destroy: Êtes-vous certain de vouloir supprimer cet article ?
         destroy: Supprimer
@@ -58,7 +58,7 @@ fr-LU:
           most_commented_posts: Articles les plus commentés
       read_more: Voir la suite
     components:
-      nbs:
+      whiteboard:
         name: Actualités
         settings:
           global:
@@ -71,7 +71,7 @@ fr-LU:
             endorsements_blocked: Soutiens bloqués
             endorsements_enabled: Soutiens activés
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: L'article "%{resource_title}" a été publié dans "%{participatory_space_title}" que vous suivez.
           email_outro: Vous avez reçu cette notification parce que vous suivez "%{participatory_space_title}". Vous pouvez le retirer du lien précédent.

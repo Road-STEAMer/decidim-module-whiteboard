@@ -2,16 +2,16 @@
 sk:
   activemodel:
     models:
-      decidim/nbs/create_post_event: Nový príspevok na blogu
+      decidim/whiteboard/create_post_event: Nový príspevok na blogu
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         one: Príspevok
         few: Príspevky
         many: Príspevky
         other: Príspevky
   decidim:
-    nbs:
+    whiteboard:
       actions:
         confirm_destroy: Naozaj chcete odstrániť tento príspevok?
         destroy: Odstrániť
@@ -35,7 +35,7 @@ sk:
             author: Autor
             body: Telo textu
     components:
-      nbs:
+      whiteboard:
         name: Blog
         settings:
           global:
@@ -47,7 +47,7 @@ sk:
             endorsements_blocked: Zablokované schválenia
             endorsements_enabled: Povolené schválenia
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: Príspevok "%{resource_title}" bol publikovaný v priestore "%{participatory_space_title}", ktorý sledujete.
           email_outro: Túto notifikáciu ste dostali, pretože sledujete priestor "%{participatory_space_title}". Notifikácie môžete zrušiť po kliknutí na predchádzajúci odkaz.

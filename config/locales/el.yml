@@ -8,14 +8,14 @@ el:
         published_at: Ώρα δημοσίευσης
         title: Τίτλος
     models:
-      decidim/nbs/create_post_event: Νέα ανάρτηση ιστολογίου
+      decidim/whiteboard/create_post_event: Νέα ανάρτηση ιστολογίου
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         one: Δημοσίευση
         other: Δημοσιεύσεις
   decidim:
-    nbs:
+    whiteboard:
       actions:
         author_id: Δημιουργία ανάρτησης ως
         confirm_destroy: Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτήν τη δημοσίευση;
@@ -58,7 +58,7 @@ el:
             published_at: Ώρα δημοσίευσης
             title: Τίτλος
     components:
-      nbs:
+      whiteboard:
         actions:
           comment: Σχόλιο
           create: Δημιουργία
@@ -77,7 +77,7 @@ el:
             endorsements_blocked: Επιδοκιμασίες αποκλεισμένες
             endorsements_enabled: Επιδοκιμασίες ενεργοποιημένες
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: Η ανάρτηση «%{resource_title}» έχει δημοσιευτεί στον χώρο συμμετοχής «%{participatory_space_title}» που ακολουθείτε.
           email_outro: Λάβατε αυτήν την ειδοποίηση επειδή ακολουθείτε τον χώρο συμμετοχής «%{participatory_space_title}». Μπορείτε να σταματήσετε να τον ακολουθείτε από τον προηγούμενο σύνδεσμο.

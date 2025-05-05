@@ -1,7 +1,7 @@
 ---
 kaa:
   decidim:
-    nbs:
+    whiteboard:
       actions:
         destroy: Óshiriw
         edit: Ózgeris kirgiziw
@@ -17,7 +17,7 @@ kaa:
           fields:
             author: Avtor
     components:
-      nbs:
+      whiteboard:
         actions:
           create: Jaratıw
           destroy: Óshiriw

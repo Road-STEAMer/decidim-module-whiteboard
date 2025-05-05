@@ -2,14 +2,14 @@
 "no":
   activemodel:
     models:
-      decidim/nbs/create_post_event: Nytt blogg-innlegg
+      decidim/whiteboard/create_post_event: Nytt blogg-innlegg
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         one: Innlegg
         other: Innlegg
   decidim:
-    nbs:
+    whiteboard:
       actions:
         author_id: Opprett innlegg som
         confirm_destroy: Er du sikker på at du vil slette dette innlegget?
@@ -35,7 +35,7 @@
             author: Forfatter
             body: Tekst
     components:
-      nbs:
+      whiteboard:
         actions:
           create: Opprett
           destroy: Slett
@@ -52,7 +52,7 @@
             endorsements_blocked: Påtegnelser blokkert
             endorsements_enabled: Påtegnelser aktivert
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: Innlegget "%{resource_title}" er publisert til "%{participatory_space_title}" som du følger.
           email_outro: Du har mottatt denne varslingen fordi du følger "%{participatory_space_title}". Du kan slutte å følge den fra den forrige lenken.

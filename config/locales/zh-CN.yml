@@ -2,13 +2,13 @@
 zh-CN:
   activemodel:
     models:
-      decidim/nbs/create_post_event: 新博客文章
+      decidim/whiteboard/create_post_event: 新博客文章
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         other: 员额
   decidim:
-    nbs:
+    whiteboard:
       actions:
         confirm_destroy: 您确定要删除此帖子？
         destroy: 删除
@@ -32,7 +32,7 @@ zh-CN:
             author: 作者
             body: 正文内容
     components:
-      nbs:
+      whiteboard:
         name: 博客
         settings:
           global:
@@ -45,7 +45,7 @@ zh-CN:
             endorsements_blocked: 已阻止授权
             endorsements_enabled: 授权已启用
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: 帖子"%{resource_title}" 已经发布在"%{participatory_space_title}"，您关注的是这个帖子。
           email_outro: 您收到此通知是因为您正在关注 "%{participatory_space_title}"。您可以从上一个链接取消关注它。

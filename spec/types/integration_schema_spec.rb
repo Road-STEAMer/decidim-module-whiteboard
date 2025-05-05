@@ -6,7 +6,7 @@ require "decidim/accountability/test/factories"
 
 describe "Decidim::Api::QueryType" do
   include_context "with a graphql decidim component"
-  let(:component_type) { "nbs" }
+  let(:component_type) { "whiteboard" }
   let!(:current_component) { create(:post_component, participatory_space: participatory_process) }
   let!(:post) { create(:post, :with_endorsements, component: current_component, published_at: 2.days.ago) }
 
@@ -38,7 +38,7 @@ describe "Decidim::Api::QueryType" do
       "id" => post.id.to_s,
       "title" => { "translation" => post.title[locale] },
       "totalCommentsCount" => 0,
-      "type" => "Decidim::Nbs::Post",
+      "type" => "Decidim::Whiteboard::Post",
       "updatedAt" => post.updated_at.iso8601.to_s.gsub("Z", "+00:00"),
       "userAllowedToComment" => true,
       "versions" => [],
@@ -48,7 +48,7 @@ describe "Decidim::Api::QueryType" do
 
   let(:posts_data) do
     {
-      "__typename" => "nbs",
+      "__typename" => "whiteboard",
       "id" => current_component.id.to_s,
       "name" => { "translation" => translated(current_component.name) },
       "posts" => {
@@ -71,7 +71,7 @@ describe "Decidim::Api::QueryType" do
   describe "valid connection query" do
     let(:component_fragment) do
       %(
-      fragment fooComponent on nbs {
+      fragment fooComponent on whiteboard {
         posts{
           edges {
             node{
@@ -147,7 +147,7 @@ describe "Decidim::Api::QueryType" do
 
       let(:component_fragment) do
         %(
-          fragment fooComponent on nbs {
+          fragment fooComponent on whiteboard {
             posts(#{criteria}){
               edges {
                 node{ id }
@@ -253,7 +253,7 @@ describe "Decidim::Api::QueryType" do
   describe "valid query" do
     let(:component_fragment) do
       %(
-      fragment fooComponent on nbs {
+      fragment fooComponent on whiteboard {
         post(id: #{post.id}) {
           acceptsNewComments
           attachments {

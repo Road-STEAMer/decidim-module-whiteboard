@@ -8,16 +8,16 @@ pl:
         published_at: Czas publikacji posta
         title: Tytuł posta
     models:
-      decidim/nbs/create_post_event: Nowy wpis na blogu
+      decidim/whiteboard/create_post_event: Nowy wpis na blogu
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         one: Wpis
         few: Wpisy
         many: Wpisy
         other: Wpisy
   decidim:
-    nbs:
+    whiteboard:
       actions:
         author_id: Utwórz wpis jako
         confirm_destroy: Czy na pewno chcesz usunąć ten wpis?
@@ -68,7 +68,7 @@ pl:
         index:
           empty: Nie ma tu jeszcze żadnych wpisów.
     components:
-      nbs:
+      whiteboard:
         actions:
           comment: Skomentuj
           create: Utwórz
@@ -87,7 +87,7 @@ pl:
             endorsements_blocked: Możliwość rekomendowania zablokowana
             endorsements_enabled: Rekomendowanie włączone
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: Wpis "%{resource_title}" został opublikowany w obserwowanym przez Ciebie "%{participatory_space_title}".
           email_outro: Otrzymałeś to powiadomienie, ponieważ obserwujesz "%{participatory_space_title}". Możesz zrezygnować z obserwowania klikając w poprzedni link.

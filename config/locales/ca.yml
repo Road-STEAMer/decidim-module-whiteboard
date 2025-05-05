@@ -8,14 +8,14 @@ ca:
         published_at: Hora de publicació
         title: Títol
     models:
-      decidim/nbs/create_post_event: Nova publicació al blog
+      decidim/whiteboard/create_post_event: Nova publicació al blog
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         one: Publicació
         other: Publicacions
   decidim:
-    nbs:
+    whiteboard:
       actions:
         author_id: Crear publicació com
         confirm_destroy: Segur que vols eliminar aquesta publicació?
@@ -69,7 +69,7 @@ ca:
             other: "%{count} publicacions"
           empty: Encara no hi ha cap publicació.
     components:
-      nbs:
+      whiteboard:
         actions:
           comment: Comentar
           create: Crear
@@ -88,7 +88,7 @@ ca:
             endorsements_blocked: Adhesions bloquejades
             endorsements_enabled: Adhesions habilitades
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: La publicació "%{resource_title}" s'ha publicat al "%{participatory_space_title}", el qual segueixes.
           email_outro: Has rebut aquesta notificació perquè estàs seguint l'espai "%{participatory_space_title}". Pots deixar de seguir-lo des de l'enllaç anterior.

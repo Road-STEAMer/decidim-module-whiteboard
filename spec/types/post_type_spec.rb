@@ -9,7 +9,7 @@ require "decidim/core/test/shared_examples/timestamps_interface_examples"
 require "decidim/core/test/shared_examples/endorsable_interface_examples"
 
 module Decidim
-  module Nbs
+  module Whiteboard
     describe PostType, type: :graphql do
       include_context "with a graphql class type"
 

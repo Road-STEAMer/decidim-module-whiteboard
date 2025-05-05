@@ -1,14 +1,14 @@
 lb:
   activemodel:
     models:
-      decidim/nbs/create_post_event: Neuer Blogeintrag
+      decidim/whiteboard/create_post_event: Neuer Blogeintrag
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         one: Post
         other: Beiträge
   decidim:
-    nbs:
+    whiteboard:
       actions:
         confirm_destroy: Möchten Sie diesen Beitrag wirklich löschen?
         destroy: Löschen
@@ -58,7 +58,7 @@ lb:
           most_commented_posts: Meist kommentierte Posts
       read_more: Weiterlesen
     components:
-      nbs:
+      whiteboard:
         actions:
           comment: Kommentar
           endorse: Bestätigen
@@ -74,7 +74,7 @@ lb:
             endorsements_blocked: Unterstützung deaktiviert
             endorsements_enabled: Unterstützung aktiviert
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: Der Beitrag "%{resource_title}" wurde in "%{participatory_space_title}" veröffentlicht, dem Sie folgen.
           email_outro: Sie haben diese Benachrichtigung erhalten, weil Sie "%{participatory_space_title}" folgen. Falls Sie keine solchen Benachrichtigungen mehr erhalten möchten, besuchen Sie den obigen Link.

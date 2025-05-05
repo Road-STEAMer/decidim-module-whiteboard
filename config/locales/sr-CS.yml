@@ -2,7 +2,7 @@
 sr:
   decidim:
     components:
-      nbs:
+      whiteboard:
         settings:
           step:
             endorsements_blocked: Podržavanja su onemogućena

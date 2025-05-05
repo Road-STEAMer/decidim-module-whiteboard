@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Decidim
-  module Nbs
+  module Whiteboard
     # This type represents a Post.
     class PostType < Decidim::Api::Types::BaseObject
       implements Decidim::Comments::CommentableInterface

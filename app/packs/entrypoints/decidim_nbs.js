@@ -2,4 +2,4 @@
 require.context("../images", true)
 
 // CSS
-import "stylesheets/nbs.scss"
+import "stylesheets/whiteboard.scss"

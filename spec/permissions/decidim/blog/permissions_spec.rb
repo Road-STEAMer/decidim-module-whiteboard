@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-describe Decidim::Nbs::Permissions do
+describe Decidim::Whiteboard::Permissions do
   subject { described_class.new(user, permission_action, context).permissions.allowed? }
 
   let(:user) { create(:user, organization: blog_component.organization) }

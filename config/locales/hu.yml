@@ -8,14 +8,14 @@ hu:
         published_at: Közzététel időpontja
         title: Cím
     models:
-      decidim/nbs/create_post_event: Új blogbejegyzés
+      decidim/whiteboard/create_post_event: Új blogbejegyzés
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         one: Bejegyzés
         other: Bejegyzések
   decidim:
-    nbs:
+    whiteboard:
       actions:
         author_id: Bejegyzés létrehozása
         confirm_destroy: Biztos, hogy törlöd ezt a bejegyzést?
@@ -66,7 +66,7 @@ hu:
         index:
           empty: Még nincsenek bejegyzések.
     components:
-      nbs:
+      whiteboard:
         actions:
           comment: Hozzászólás
           create: Létrehozás
@@ -85,7 +85,7 @@ hu:
             endorsements_blocked: Támogatások letiltva
             endorsements_enabled: Támogatások engedélyezve
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: 'A(z) "%{resource_title}" című bejegyzés a következő helyen jelent meg: "%{participatory_space_title}".'
           email_outro: 'Ezt az értesítést azért kaptad, mert ezt követed: "%{participatory_space_title}". Leiratkozás az előző link segítségével.'

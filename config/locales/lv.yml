@@ -2,15 +2,15 @@
 lv:
   activemodel:
     models:
-      decidim/nbs/create_post_event: Jauna emuāra ziņa
+      decidim/whiteboard/create_post_event: Jauna emuāra ziņa
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         zero: Ziņas
         one: Ziņa
         other: Ziņas
   decidim:
-    nbs:
+    whiteboard:
       actions:
         confirm_destroy: Vai tiešām vēlaties dzēst šo ziņu?
         destroy: Dzēst
@@ -34,7 +34,7 @@ lv:
             author: Autors
             body: Pamatteksts
     components:
-      nbs:
+      whiteboard:
         name: Emuārs
         settings:
           global:
@@ -46,7 +46,7 @@ lv:
             endorsements_blocked: Atbalsti ir bloķēti
             endorsements_enabled: Atbalsti ir iespējoti
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: Ziņa "%{resource_title}" ir publicēta "%{participatory_space_title}", kurai sekojat.
           email_outro: Jūs saņēmāt šo paziņojumu, jo sekojat "%{participatory_space_title}". Jūs varat atsekot tai no iepriekšējās saites.

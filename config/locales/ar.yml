@@ -8,10 +8,10 @@ ar:
         published_at: موعد النشر
         title: العنوان
     models:
-      decidim/nbs/create_post_event: بلوق وظيفة جديدة
+      decidim/whiteboard/create_post_event: بلوق وظيفة جديدة
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         zero: المشاركات
         one: بريد
         two: المشاركات
@@ -19,7 +19,7 @@ ar:
         many: المشاركات
         other: المشاركات
   decidim:
-    nbs:
+    whiteboard:
       actions:
         author_id: إنشاء مشاركة كـ
         confirm_destroy: هل أنت متأكد أنك تريد حذف هذه المشاركة؟
@@ -55,7 +55,7 @@ ar:
             published_at: موعد النشر
             title: العنوان
     components:
-      nbs:
+      whiteboard:
         actions:
           comment: التعليق
           create: إنشاء
@@ -74,7 +74,7 @@ ar:
             endorsements_blocked: التأييدات مغلقةٌ
             endorsements_enabled: التأييدات مُتاحه
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: تم نشر المنشور "%{resource_title}" في "%{participatory_space_title}" الذي تتابعه.
           email_outro: لقد تلقيت هذا الإشعار لأنك تتابع "%{participatory_space_title}". يمكنك إلغاء تتبعه من الرابط السابق.

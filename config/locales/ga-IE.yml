@@ -2,14 +2,14 @@
 ga:
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         one: Postáil
         two: Postálacha
         few: Postálacha
         many: Postálacha
         other: Postálacha
   decidim:
-    nbs:
+    whiteboard:
       actions:
         destroy: Scrios
         edit: Eagar
@@ -31,7 +31,7 @@ ga:
             author: Údar
             body: Corp
     components:
-      nbs:
+      whiteboard:
         actions:
           comment: Tabhair Trácht
           endorse: Formhuinigh

@@ -8,16 +8,16 @@ ru:
         published_at: Время публикации
         title: Заголовок
     models:
-      decidim/nbs/create_post_event: Создать пост в блоге
+      decidim/whiteboard/create_post_event: Создать пост в блоге
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         one: Пост
         few: Поста
         many: Постов
         other: Постов
   decidim:
-    nbs:
+    whiteboard:
       actions:
         author_id: Создать пост как
         confirm_destroy: Вы действительно хотите удалить этот пост?
@@ -64,7 +64,7 @@ ru:
             published_at: Время публикации
             title: Название
     components:
-      nbs:
+      whiteboard:
         actions:
           comment: Комментарий
           create: Создать
@@ -83,7 +83,7 @@ ru:
             endorsements_blocked: Возможность выразить поддержку отключена
             endorsements_enabled: Возможность выразить поддержку включена
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: В "%{participatory_space_title}", за которым вы следите, обнародован пост "%{resource_title}".
           email_outro: Вы получили это уведомление, потому что вы следите за «%{participatory_space_title}». Вы можете перестать за ним следить, перейдя по приведенной выше ссылке.

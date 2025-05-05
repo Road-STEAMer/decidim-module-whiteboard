@@ -8,13 +8,13 @@ ja:
         published_at: 公開時刻
         title: タイトル
     models:
-      decidim/nbs/create_post_event: 新しいブログ投稿
+      decidim/whiteboard/create_post_event: 新しいブログ投稿
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         other: 投稿
   decidim:
-    nbs:
+    whiteboard:
       actions:
         author_id: 次のように投稿を作成
         confirm_destroy: この投稿を削除してもよろしいですか？
@@ -67,7 +67,7 @@ ja:
             other: "%{count} 件の投稿"
           empty: 投稿はまだありません。
     components:
-      nbs:
+      whiteboard:
         actions:
           comment: コメント
           create: 作成
@@ -86,7 +86,7 @@ ja:
             endorsements_blocked: オススメをブロック
             endorsements_enabled: オススメが有効
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: あなたがフォローしている "%{participatory_space_title}" で投稿 "%{resource_title}" が公開されました。
           email_outro: '「%{participatory_space_title}」をフォローしているため、この通知を受け取りました。前のリンクからこの通知をアンフォローすることができます。'

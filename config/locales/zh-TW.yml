@@ -8,13 +8,13 @@ zh-TW:
         published_at: 發布時間
         title: 標題
     models:
-      decidim/nbs/create_post_event: 新增部落格文章
+      decidim/whiteboard/create_post_event: 新增部落格文章
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         other: 文章
   decidim:
-    nbs:
+    whiteboard:
       actions:
         author_id: 發佈文章
         confirm_destroy: 您確定要刪除此文章嗎？
@@ -57,7 +57,7 @@ zh-TW:
             published_at: 發布時間
             title: 標題
     components:
-      nbs:
+      whiteboard:
         actions:
           comment: 評論
           create: 建立
@@ -76,7 +76,7 @@ zh-TW:
             endorsements_blocked: 背書已封鎖
             endorsements_enabled: 背書已啟用
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: 您追蹤的參與空間 "%{participatory_space_title}" 中有新文章發佈了，標題為 "%{resource_title}"。
           email_outro: 您收到了此通知，是因為您正在關注 "%{participatory_space_title}"。您可以通過前面的鏈接取消關注它。

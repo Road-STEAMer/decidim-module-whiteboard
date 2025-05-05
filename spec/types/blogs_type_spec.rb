@@ -5,8 +5,8 @@ require "decidim/api/test/type_context"
 require "decidim/core/test"
 
 module Decidim
-  module Nbs
-    describe NbsType, type: :graphql do
+  module Whiteboard
+    describe WhiteboardType, type: :graphql do
       include_context "with a graphql class type"
       let(:model) { create(:post_component) }
 

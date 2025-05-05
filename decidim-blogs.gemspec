@@ -3,11 +3,11 @@
 $LOAD_PATH.push File.expand_path("lib", __dir__)
 
 # Maintain your gem's version:
-require "decidim/nbs/version"
+require "decidim/whiteboard/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.version = Decidim::Nbs.version
+  s.version = Decidim::Whiteboard.version
   s.authors = ["Isaac Massot Gil"]
   s.email = ["isaac.mg@coditramuntana.com"]
   s.license = "AGPL-3.0"
@@ -21,8 +21,8 @@ Gem::Specification.new do |s|
   }
   s.required_ruby_version = "~> 3.2.0"
 
-  s.name = "decidim-nbs"
-  s.summary = "Decidim nbs module"
+  s.name = "decidim-whiteboard"
+  s.summary = "Decidim whiteboard module"
   s.description = "A Blog component for decidim's participatory spaces."
 
   s.files = Dir.chdir(__dir__) do
@@ -32,12 +32,12 @@ Gem::Specification.new do |s|
     end
   end
 
-  s.add_dependency "decidim-admin", Decidim::Nbs.version
-  s.add_dependency "decidim-comments", Decidim::Nbs.version
-  s.add_dependency "decidim-core", Decidim::Nbs.version
+  s.add_dependency "decidim-admin", Decidim::Whiteboard.version
+  s.add_dependency "decidim-comments", Decidim::Whiteboard.version
+  s.add_dependency "decidim-core", Decidim::Whiteboard.version
 
-  s.add_development_dependency "decidim-admin", Decidim::Nbs.version
-  s.add_development_dependency "decidim-assemblies", Decidim::Nbs.version
-  s.add_development_dependency "decidim-dev", Decidim::Nbs.version
-  s.add_development_dependency "decidim-participatory_processes", Decidim::Nbs.version
+  s.add_development_dependency "decidim-admin", Decidim::Whiteboard.version
+  s.add_development_dependency "decidim-assemblies", Decidim::Whiteboard.version
+  s.add_development_dependency "decidim-dev", Decidim::Whiteboard.version
+  s.add_development_dependency "decidim-participatory_processes", Decidim::Whiteboard.version
 end

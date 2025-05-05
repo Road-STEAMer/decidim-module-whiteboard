@@ -4,7 +4,7 @@ require "spec_helper"
 
 describe "endorse posts" do
   include_context "with a component"
-  let(:manifest_name) { "nbs" }
+  let(:manifest_name) { "whiteboard" }
   let(:organization) { create(:organization) }
   let!(:post) { create(:post, author: user, component:, title: { en: "Blog post title" }) }
   let!(:resource) { post }

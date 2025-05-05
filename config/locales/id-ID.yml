@@ -2,13 +2,13 @@
 id:
   activemodel:
     models:
-      decidim/nbs/create_post_event: Posting blog baru
+      decidim/whiteboard/create_post_event: Posting blog baru
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         other: Posting
   decidim:
-    nbs:
+    whiteboard:
       actions:
         confirm_destroy: Anda yakin ingin menghapus posting ini?
         destroy: Menghapus
@@ -32,7 +32,7 @@ id:
             author: Penulis
             body: Tubuh
     components:
-      nbs:
+      whiteboard:
         name: Blog
         settings:
           global:
@@ -42,7 +42,7 @@ id:
             announcement: Pengumuman
             comments_blocked: Komentar diblokir
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: Posting "%{resource_title}" telah dipublikasikan di "%{participatory_space_title}" yang Anda ikuti.
           email_outro: Anda telah menerima pemberitahuan ini karena Anda mengikuti "%{participatory_space_title}". Anda dapat berhenti mengikutinya dari tautan sebelumnya.

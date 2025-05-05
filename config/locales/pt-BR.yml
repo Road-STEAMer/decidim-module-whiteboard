@@ -8,14 +8,14 @@ pt-BR:
         published_at: Horário da publicação
         title: Título
     models:
-      decidim/nbs/create_post_event: Nova postagem no blog
+      decidim/whiteboard/create_post_event: Nova postagem no blog
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         one: Postagem
         other: Postagens
   decidim:
-    nbs:
+    whiteboard:
       actions:
         author_id: Criar publicação como
         confirm_destroy: Deseja mesmo excluir este post?
@@ -69,7 +69,7 @@ pt-BR:
             other: "%{count} publicações"
           empty: Não existem publicações ainda.
     components:
-      nbs:
+      whiteboard:
         actions:
           comment: Comentário
           create: Criar
@@ -88,7 +88,7 @@ pt-BR:
             endorsements_blocked: Endossos bloqueados
             endorsements_enabled: Endossos ativados
     events:
-      nbs:
+      whiteboard:
         post_created:
           email_intro: A postagem "%{resource_title}" foi publicada em "%{participatory_space_title}" que você está seguindo.
           email_outro: Você recebeu esta notificação porque está seguindo "%{participatory_space_title}". Você pode deixar de segui-lo no link anterior.

@@ -8,52 +8,52 @@ en:
         published_at: Publish time
         title: Title
     models:
-      decidim/nbs/create_post_event: New nbs post
+      decidim/whiteboard/create_post_event: New whiteboard post
   activerecord:
     models:
-      decidim/nbs/post:
+      decidim/whiteboard/post:
         one: Post
-        other: Stories
+        other: Boards
   decidim:
-    nbs:
+    whiteboard:
       actions:
-        author_id: Create story as
-        confirm_destroy: Are you sure you want to delete this story ?
+        author_id: Create board as
+        confirm_destroy: Are you sure you want to delete this board ?
         destroy: Delete
         edit: Edit
-        new: New Story
+        new: New Board
         title: Actions
       admin:
         posts:
           create:
             invalid: There was a problem creating this post.
-            success: Story successfully created.
+            success: Board successfully created.
           destroy:
-            success: Story successfully deleted.
+            success: Board successfully deleted.
           edit:
             save: Update
             title: Edit post
           index:
             not_published_yet: Not published yet.
-            title: Stories
+            title: Boards
           new:
             create: Create
             title: Create post
           update:
             invalid: There was a problem saving the post.
-            success: Story successfully saved.
+            success: Board successfully saved.
           form:  
             iframe_width: "Iframe width (px or %)"
             iframe_height: "Iframe height (px)"     
       admin_log:
         post:
-          create: "%{user_name} created the %{resource_name} nbs story in %{space_name}"
-          delete: "%{user_name} deleted the %{resource_name} nbs story from %{space_name}"
-          update: "%{user_name} updated the %{resource_name} nbs story in %{space_name}"
+          create: "%{user_name} created the %{resource_name} whiteboard board in %{space_name}"
+          delete: "%{user_name} deleted the %{resource_name} whiteboard board from %{space_name}"
+          update: "%{user_name} updated the %{resource_name} whiteboard board in %{space_name}"
       content_blocks:
         highlighted_posts:
           last_published: Last published
-          name: Stories
+          name: Boards
           see_all: See all posts
       last_activity:
         new_post: 'New post:'
@@ -70,16 +70,16 @@ en:
           count:
             one: "%{count} post"
             other: "%{count} posts"
-          empty: There are no stories yet.
+          empty: There are no boards yet.
     components:
-     nbs:
+     whiteboard:
       actions:
         comment: Comment
         create: Create
         destroy: Delete
         endorse: Endorse
         update: Update
-      name: NBS Stories
+      name: Whiteboard
       settings:
         global:
           announcement: Announcement
@@ -109,11 +109,11 @@ en:
           endorsements_blocked: Endorsements blocked
           endorsements_enabled: Endorsements enabled
     events:
-      nbs:
+      whiteboard:
         post_created:
-          email_intro: The story "%{resource_title}" has been published in "%{participatory_space_title}" that you are following.
+          email_intro: The board "%{resource_title}" has been published in "%{participatory_space_title}" that you are following.
           email_outro: You have received this notification because you are following "%{participatory_space_title}". You can unfollow it from the previous link.
-          email_subject: New story published in %{participatory_space_title}
-          notification_title: The story <a href="%{resource_path}">%{resource_title}</a> has been published in %{participatory_space_title}
+          email_subject: New board published in %{participatory_space_title}
+          notification_title: The board <a href="%{resource_path}">%{resource_title}</a> has been published in %{participatory_space_title}
     statistics:
-      posts_count: Stories
+      posts_count: Boards

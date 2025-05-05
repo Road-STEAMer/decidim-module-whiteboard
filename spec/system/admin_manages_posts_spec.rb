@@ -3,7 +3,7 @@
 require "spec_helper"
 
 describe "Admin manages posts" do
-  let(:manifest_name) { "nbs" }
+  let(:manifest_name) { "whiteboard" }
   let(:two_days_ago) { 2.days.ago.strftime("%d/%m/%Y %H:%M") }
   let(:two_days_from_now) { 2.days.from_now.strftime("%d/%m/%Y %H:%M") }
   let!(:post1) { create(:post, component: current_component, author:, title: { en: "Post title 1" }, created_at: two_days_ago, published_at: two_days_ago) }

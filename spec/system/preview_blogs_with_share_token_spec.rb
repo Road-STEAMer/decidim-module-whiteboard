@@ -2,8 +2,8 @@
 
 require "spec_helper"
 
-describe "Preview nbs with share token" do
-  let(:manifest_name) { "nbs" }
+describe "Preview whiteboard with share token" do
+  let(:manifest_name) { "whiteboard" }
 
   include_context "with a component"
   it_behaves_like "preview component with share_token"

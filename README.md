@@ -1,4 +1,4 @@
-# decidim-nbs
+# decidim-whiteboard
 
 The BLOG module adds posts to any participatory process. It adds a CRUD engine
 to the admin and public view scoped inside the participatory process.
@@ -12,9 +12,9 @@ BLOG will be available as a Component for a Participatory Process.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'decidim-nbs'
+gem 'decidim-whiteboard'
 bundle
-bin/rails decidim_nbs:install:migrations
+bin/rails decidim_whiteboard:install:migrations
 bin/rails db:migrate
 ```
 
