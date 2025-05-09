@@ -7,7 +7,7 @@ Decidim.register_component(:whiteboard) do |component|
   component.icon_key = "pen-nib-line"
   component.permissions_class_name = "Decidim::Whiteboard::Permissions"
 
-  component.query_type = "Decidim::Whiteboard::WhiteboardType"
+  #component.query_type = "Decidim::Whiteboard::WhiteboardType"
 
   component.on(:before_destroy) do |instance|
     raise StandardError, "Cannot remove this component" if Decidim::Whiteboard::Post.where(component: instance).any?
