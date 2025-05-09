@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "decidim/whiteboard/admin"
-require "decidim/whiteboard/api"
+#require "decidim/whiteboard/api"
 require "decidim/whiteboard/engine"
 require "decidim/whiteboard/admin_engine"
 require "decidim/whiteboard/component"
