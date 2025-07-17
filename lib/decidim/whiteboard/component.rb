@@ -4,7 +4,7 @@ Decidim.register_component(:whiteboard) do |component|
   component.engine = Decidim::Whiteboard::Engine
   component.admin_engine = Decidim::Whiteboard::AdminEngine
   component.icon = "media/images/decidim_whiteboard.svg"
-  component.icon_key = "pen-nib-line"
+  component.icon_key = "blackboard-line"
   component.permissions_class_name = "Decidim::Whiteboard::Permissions"
 
   #component.query_type = "Decidim::Whiteboard::WhiteboardType"
