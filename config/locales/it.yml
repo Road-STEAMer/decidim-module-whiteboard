@@ -1,61 +1,118 @@
----
 it:
   activemodel:
+    attributes:
+      post:
+        body: Testo
+        decidim_author_id: Autore
+        published_at: Data di pubblicazione
+        title: Titolo
     models:
-      decidim/whiteboard/create_post_event: Nuovo post sul blog
+      decidim/whiteboard/create_post_event: Nuovo post lavagna
   activerecord:
     models:
       decidim/whiteboard/post:
-        one: Inviare
-        other: Messaggi
+        one: Post
+        other: Lavagne
   decidim:
     whiteboard:
       actions:
-        author_id: Crea post come
-        confirm_destroy: Sei sicuro di voler eliminare questo post?
+        author_id: Crea lavagna come
+        confirm_destroy: Sei sicuro di voler eliminare questa lavagna?
         destroy: Elimina
         edit: Modifica
-        new: Nuovo post
+        new: Nuova lavagna
         title: Azioni
       admin:
         posts:
+          create:
+            invalid: Errore nella creazione del post.
+            success: Lavagna creata con successo.
+          destroy:
+            success: Lavagna eliminata con successo.
           edit:
-            save: Aggiornare
+            save: Aggiorna
             title: Modifica post
           index:
-            title: Messaggi
+            not_published_yet: Non ancora pubblicato.
+            title: Lavagne
           new:
-            create: Creare
-            title: Crea un post
+            create: Crea
+            title: Crea post
           update:
-            invalid: Si sono verificati errori durante il salvataggio del post.
+            invalid: Errore nel salvataggio del post.
+            success: Post salvato con successo.
+          form:
+            iframe_width: "Larghezza iframe (px o %)"
+            iframe_height: "Altezza iframe (px)"
+      admin_log:
+        post:
+          create: "%{user_name} ha creato la lavagna %{resource_name} in %{space_name}"
+          delete: "%{user_name} ha eliminato la lavagna %{resource_name} da %{space_name}"
+          update: "%{user_name} ha aggiornato la lavagna %{resource_name} in %{space_name}"
+      content_blocks:
+        highlighted_posts:
+          last_published: Ultimo pubblicato
+          name: Lavagne
+          see_all: Vedi tutti i post
+      last_activity:
+        new_post: "Nuovo post:"
       models:
         post:
           fields:
             author: Autore
-            body: Corpo
+            body: Testo
+            official_blog_post: Post ufficiale
+            published_at: Data di pubblicazione
+            title: Titolo
+      posts:
+        index:
+          count:
+            one: "%{count} post"
+            other: "%{count} post"
+          empty: Non ci sono ancora lavagne.
     components:
       whiteboard:
         actions:
-          comment: Commento
+          comment: Commenta
+          create: Crea
+          destroy: Elimina
           endorse: Appoggia
-        name: blog
+          update: Aggiorna
+        name: Whiteboard
         settings:
           global:
             announcement: Annuncio
             comments_enabled: Commenti abilitati
-            comments_max_length: Lunghezza massima dei commenti (Lasciare 0 per il valore predefinito)
+            comments_max_length: Lunghezza massima commenti (0 = default)
+            content_height: Altezza contenuto
+            content_height_help: Per altezza automatica serve iframe-resizer supportato dal provider. Verifica prima di usarlo.
+            content_height_options:
+              '16:9': '16:9'
+              '4:3': '4:3'
+              auto: Altezza automatica
+              manual_pixel: Altezza manuale (px)
+            content_width: Larghezza contenuto
+            content_width_options:
+              full_width: "Larghezza totale"
+              manual_percentage: "Larghezza manuale (%)"
+              manual_pixel: "Larghezza manuale (px)"
+            frameborder: Mostra bordo
+            height_value: Valore altezza
+            src: Sorgente contenuto
+            src_help: Inserisci il percorso del contenuto da mostrare.
+            viewport_width: Larghezza massima viewport app
+            width_value: Valore larghezza
           step:
             announcement: Annuncio
             comments_blocked: Commenti bloccati
-            endorsements_blocked: Appoggi bloccati
-            endorsements_enabled: Appoggi abilitati
+            endorsements_blocked: Approvazioni bloccate
+            endorsements_enabled: Approvazioni abilitate
     events:
       whiteboard:
         post_created:
-          email_intro: Il post "%{resource_title}" è stato pubblicato in "%{participatory_space_title}" che stai seguendo.
-          email_outro: Hai ricevuto questa notifica perché stai seguendo "%{participatory_space_title}". Puoi smettere di seguirlo dal link precedente.
-          email_subject: Nuovo post pubblicato su %{participatory_space_title}
-          notification_title: Il post <a href="%{resource_path}">%{resource_title}</a> è stato pubblicato su %{participatory_space_title}
+          email_intro: La lavagna "%{resource_title}" è stata pubblicata in "%{participatory_space_title}" che stai seguendo.
+          email_outro: Ricevi questa notifica perché segui "%{participatory_space_title}". Puoi annullare l’iscrizione dal link precedente.
+          email_subject: Nuovo post in %{participatory_space_title}
+          notification_title: La lavagna <a href="%{resource_path}">%{resource_title}</a> è stata pubblicata in %{participatory_space_title}
     statistics:
-      posts_count: Post
+      posts_count: Lavagne

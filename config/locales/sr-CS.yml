@@ -1,9 +1,0 @@
----
-sr:
-  decidim:
-    components:
-      whiteboard:
-        settings:
-          step:
-            endorsements_blocked: Podržavanja su onemogućena
-            endorsements_enabled: Podržavanja su omogućena
